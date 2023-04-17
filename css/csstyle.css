@@ -1,17 +1,61 @@
 h1{
 text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-table,td,tr{
-min-width: 300px;
+.container{
+    width: 100%; 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+    
+  
+    margin: 0;
+}
+.box{
+    height: 40px;
+    background-color: rgb(142, 202, 190);
+    padding: 10px;
+    border-radius: 10px;
+}
+td,tr{
+width: 200px;
 height: 50px; 
 border: 2px solid black;
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+table{
+    border-collapse: collapse;
+}
+body{
+  background-color: rgb(167, 169, 169);
 
 }
-   /*  background-color: rgb(67, 70, 70); */
+.table-box{
+    display: flex;
+    justify-content: center;
+}
+.button{
+    display: flex;
+    justify-content: end;
+    padding: 0 80px;
 
-body{
-    background: #EFEFBB;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #D4D3DD, #EFEFBB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+}
+button{
+   color: #444;
+   font-size: 20px;
+   padding: 1rem 1.5rem ;
+   border: 2px solid #eee;
+   border-radius: .5rem;
+   cursor: pointer;
+   transition: all 1s ease;
+   box-shadow: .5rem .5rem 1rem #ccc
+   -.5rem -.5rem 1rem #fff;
+}
+input{
+   width: 98%;
+   height: 40px;
+   border: none;
+   border-radius: 10px;
+   text-align: right;
 }
