@@ -11,27 +11,26 @@
 </head>
 
 <body>
-    <h1>formulario de ficha tecnica</h1>
+    <h1>Formulario de ficha tecnica</h1>
     <div class="container">
 
-        <div class="box">nombre del producto<input type="text" id="name" placeholder="nombre del producto"></div>
-        <div class="box">linea del producto<input type="text" id="linea" placeholder="linea producto"></div>
-        <div class="box">versiones anteriores<input type="text" id="versiones" placeholder="versiones del producto">
+        <div class="box">Nombre del producto<input type="text" id="name"></div>
+        <div class="box">Linea del producto<input type="text" id="linea"></div>
+        <div class="box">versiones anteriores<input type="text" id="versiones"></div>
+        <div class="box">Version actual <td colspan="2"><input type="text" id="versionactual"></div>
+        <div class="box">Modulo<input type="text" id="modulo1"></td>
         </div>
-        <div class="box">version actual <td colspan="2"><input type="text" id="versionactual"></div>
-        <div class="box">modulo<input type="text" id="modulo1"></td>
-        </div>
-        <div class="box">descripcion general del producto <input type="text" id="descripcion"></div>
-        <div class="box">descrpcion de arquitectura<input type="text" id="arquitectura1"></div>
-        <div class="box">hardware<input type="text" id="requerimientoshd"></div>
-        <div class="box">software<input type="text" id="requerimientossw"></div>
-        <div class="box">otros requerimientos <input type="text" id="requerimientosOtros"></div>
-        <div class="box"> requerimientos cliente (hardware) <input type="text" id="requerimientosCliente"></div>
-        <div class="box">requerimientos cliente (software) <input type="text" id="requerimientosClientesw"></div>
+        <div class="box">Descripcion general del producto <input type="text" id="descripcion"></div>
+        <div class="box">Descrpcion de arquitectura<input type="text" id="arquitectura1"></div>
+        <div class="box">Hardware<input type="text" id="requerimientoshd"></div>
+        <div class="box">Software<input type="text" id="requerimientossw"></div>
+        <div class="box">Otros requerimientos <input type="text" id="requerimientosOtros"></div>
+        <div class="box">Requerimientos cliente (hardware) <input type="text" id="requerimientosCliente"></div>
+        <div class="box">Requerimientos cliente (software) <input type="text" id="requerimientosClientesw"></div>
         <div class="box">Otros requerimientos del cliente <input type="text" id="otrosRequerimientos"></div>
-        <div class="box">requerimientos generales <input type="text" id="generales"></div>
-        <div class="box">requerimientos adicionales <input type="text" id="adicionales"></div>
-        <div class="box">clientes del producto <input type="text" id="cliente"></div>
+        <div class="box">Requerimientos generales <input type="text" id="generales"></div>
+        <div class="box">Requerimientos adicionales <input type="text" id="adicionales"></div>
+        <div class="box">Clientes del producto <input type="text" id="cliente"></div>
     </div>
     </div><br>
     <div class="button"><button onclick="comprobar()">enviar </button></div>
@@ -41,45 +40,45 @@
     <div class="table-box">
         <table>
             <tr>
-                <th colspan="3">caracteristicas del producto</th>
+                <th colspan="3">Caracteristicas del producto</th>
             </tr>
             <tr>
-                <td>nombre del producto</td>
+                <td>Nombre del producto</td>
                 <td colspan="2" id="respuesta"></td>
 
             </tr>
             <tr>
-                <td>linea del producto</td>
+                <td>Linea del producto</td>
                 <td colspan="2" id="linea-res"></td>
             </tr>
             <tr>
-                <td>versiones anteriores</td>
+                <td>Versiones anteriores</td>
                 <td colspan="2" id="respuesta-versiones"></td>
             </tr>
             <tr>
-                <td>version actual</td>
+                <td>Version actual</td>
                 <td colspan="2" id="respuestactual"></td>
             </tr>
             <tr>
-                <td rowspan="3">modulo</td>
-                <td colspan="3" id="rtamodulo1"></td>
+                <td rowspan="3">Modulo</td>
+                <td colspan="3" rowspan="3" id="rtamodulo1"></td>
             </tr>
             <tr>
-                <td colspan="2" id="rtamodulo2"></td>
+               
 
             </tr>
             <tr>
-                <td colspan="2" id="rtamodulo3"></td>
+                
             </tr>
             <tr>
-                <th colspan="3">descripcion del producto</th>
+                <th colspan="3">Descripcion del producto</th>
             </tr>
             <tr>
-                <td>descripcion general del producto</td>
+                <td>Descripcion general del producto</td>
                 <td colspan="2" id="rtadescripcion"> </td>
             </tr>
             <tr>
-                <th colspan="3">arquitectura</th>
+                <th colspan="3">Arquitectura</th>
             </tr>
             <tr>
                 <td>descripcion</td>
@@ -87,60 +86,52 @@
             </tr>
             <tr>
                 <th colspan="3">
-                    requerimientos del producto
+                    Requerimientos del producto
                 </th>
             </tr>
             <tr>
-                <th rowspan="5">requerimientos del sistema (servidor) </th>
-                <td>hardware</td>
+                <th rowspan="5">Requerimientos del sistema (Servidor) </th>
+                <td>Hardware</td>
                 <td id="rtarequerimientoshd"></td>
             </tr>
             <tr>
-                <td>software</td>
+                <td>Software</td>
                 <td id="rtarequerimientossw"></td>
             </tr>
             <tr>
-                <td rowspan="3">otros</td>
-                <td id="rtaotros1"></td>
+                <td rowspan="3">Otros</td>
+                <td id="rtaotros1" rowspan="3"></td>
             </tr>
+            <tr></tr>
+            <tr></tr>
             <tr>
-                <td id="rtaotros2"></td>
-            </tr>
-            <tr>
-                <td id="rtaotros3"></td>
-            </tr>
-            <tr>
-                <th rowspan="5">requerimientos del sistema (cliente)</th>
-                <td>hardware</td>
+                <th rowspan="5">Requerimientos del sistema (cliente)</th>
+                <td>Hardware</td>
                 <td id="rtasistemahd"></td>
             </tr>
             <tr>
-                <td>software</td>
+                <td>Software</td>
                 <td id="rtasistemasw"></td>
             </tr>
             <tr>
-                <td rowspan="3">otros</td>
-                <td id="rtasistema1"></td>
+                <td rowspan="3">Otros</td>
+                <td id="rtasistema1" rowspan="3"></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <th colspan="3">Requerimientos</th>
             </tr>
             <tr>
-                <td id="rtasistema2"></td>
-            </tr>
-            <tr>
-                <td id="rtasistema3"></td>
-            </tr>
-            <tr>
-                <th colspan="3">requerimientos</th>
-            </tr>
-            <tr>
-                <td>requerimientos generales</td>
+                <td>Requerimientos generales</td>
                 <td colspan="2" id="respuestaGenerales"></td>
             </tr>
             <tr>
-                <td>requerimientos adicionales</td>
+                <td>Requerimientos adicionales</td>
                 <td colspan="2" id="respuestaAdicionales"></td>
             </tr>
             <tr>
-                <td>clientes del producto</td>
+                <td>Clientes del producto</td>
                 <td colspan="2" id="clientes"></td>
             </tr>
 
